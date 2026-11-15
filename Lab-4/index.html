@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №4</title>
+  </head>
+  <body>
+    
+  <h1>Моя перша HTML-форма</h1>
+    
+  <form action="https://httpbin.org/post" method="POST">
+    
+  <label for="username">Ім'я:</label>
+  <input
+    type="text"
+    id="username"
+    name="username"
+    required
+  >
+    
+  <label for="birthdate"><br>Дата народження:</label>
+  <input
+    type="date"
+    id="birthdate"
+    name="birthdate"
+  >
+    
+  <label for="email"><br>Імейл:</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    required
+  >
+    
+  <label>
+    <br>Повідомлення:
+    <textarea
+        name="message"
+        rows="2"
+    ></textarea>
+  </label>
+
+  <p>Ваші улюблені напої?:</p>  
+  <div>
+  <label>
+  <input type="checkbox" name="drinks" value="Чай">
+    Чай
+  </label>
+
+  <label>
+  <input type="checkbox" name="drinks" value="Кава">
+    Кава
+  </label>
+
+  <label>
+  <input type="checkbox" name="drinks" value="Сік">
+    Сік
+  </label>
+
+   <label>
+  <input type="checkbox" name="drinks" value="Вода">
+    Вода
+  </label>
+  </div> 
+
+  <p>Моя національність:</p>
+
+  <div class="options">
+  <label>
+  <input type="radio" name="nationality" value="Українець">
+   Українець
+  </label>
+
+  <label>
+  <input type="radio" name="nationality" value="Поляк">
+   Мутант
+  </label>
+
+  <label>
+  <input type="radio" name="nationality" value="Інша">
+   Інша
+  </label>
+  </div>
+    
+  <div>
+  <button type="submit">Відправити</button>
+  <button type="reset">Очистити</button>
+  </div>
+
+  <picture>
+        <source
+            media="(max-width: 468px)"
+            srcset="images/river-trees.jpg"
+        >
+     
+        <img
+            src="images/green-trees-mountain-white-sky-daytime (1).jpg"
+            alt="Демонстраційне зображення"
+            style="width: 100%; height: auto;"
+        >
+    </picture>
+
+
+       
+
+  
+   
+  </body>
+</html>
